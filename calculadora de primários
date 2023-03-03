@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, x, y;
+    printf("Calculadora de primarios \n");
+    do{
+    printf("Digite um número: \n");
+    scanf("%d", &num);
+    }while(num<2 || num>100);
+    x = num;
+    printf("Os primarios são: ");
+    for(x; x>0; x--){
+        y= num % x;
+        if(y == 0){
+        printf("%d \n", x);
+        }
+    }
+    
+    return 0;
+}
